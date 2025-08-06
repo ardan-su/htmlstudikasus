@@ -1,0 +1,100 @@
+
+/* Ini file css untuk halaman Study Kasus */
+/* body untuk font dan layout seisinya*/
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* header untuk bagian atas halaman */
+header {
+    background-color: #409ec0;
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    border-bottom: 5px solid #3976d8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+/* .container untuk layout utama halaman */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    gap: 2rem;
+}
+
+/* #daftar-isi untuk daftar isi di sebelah kiri */
+#daftar-isi {
+    flex: 1;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+#daftar-isi h2 {
+    margin-top: 0;
+    color: #409ec0;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+#daftar-isi ul {
+    list-style: none;
+    padding: 0;
+}
+
+#daftar-isi li a {
+    text-decoration: none;
+    color: #555;
+    display: block;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+#daftar-isi li a:hover {
+    color: #4CAF50;
+    font-weight: bold;
+}
+/* #konten untuk konten utama di sebelah kanan */
+#konten {
+    flex: 3;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#konten h2 {
+    color: #388E3C;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
